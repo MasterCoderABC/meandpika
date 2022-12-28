@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Me & Pikachu Recognizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js" integrity="sha512-AQMSn1qO6KN85GOfvH6BWJk46LhlvepblftLHzAv1cdIyTWPBKHX+r+NOXVVw6+XQpeW4LJk/GTmoP48FLvblQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <center>
+      <h1>Me & Pikachu Recognizer</h1>
+      <h3 class="red">This model can sense Me or Pikachu</h3>
+      <br><br>  
+
+      <!--Webcam-->
+      <h2>Webcam View:</h2>
+      <div id="yoCamera"></div><br>
+      <div id="yoCapturedPhoto"></div><br>
+ 
+      <!--Buttons-->
+      <button onclick="captureAndIdentify()">Capture📸&🆔</button>
+
+      <!--Labels-->
+      <span><h3 class="red">Who is it?: </h3><h3 id="who"></h3></span>
+      <span><h3 class="red">Accuracy: </h3><h3 id="accuracy"></h3></span>
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>

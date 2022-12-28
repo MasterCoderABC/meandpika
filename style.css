@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body{
+   font-family: 'Source Sans Pro', sans-serif;
+   background-color: #FFFFED;
+}
+
+.red{
+   color: red;
+}
+
+h2{
+    color: blue;
+}
+
+div{
+   border: 2px dotted navy;
+   width: fit-content;
+   height: fit-content;
+}
+
+button{
+    width: 130px;
+    height: 55px;
+    background-color: yellowgreen;
+    border-radius: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    cursor: pointer;
+}
